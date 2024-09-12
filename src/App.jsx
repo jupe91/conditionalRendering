@@ -5,6 +5,8 @@ function App() {
 
   const [login, setLogin] = useState(false);  
 
+  const buttonText = login ? 'Logout' : 'Login'
+
   function loginPressed(){
     setLogin(true);
   }
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <>
-      <button onClick={loginPressed}>Login</button>
+      <button onClick={loginPressed}>{buttonText}</button>
     </>
   )
 }
