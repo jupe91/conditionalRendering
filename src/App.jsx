@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [login, setLogin] = useState(false);  
+
+  function loginPressed(){
+    setLogin(true);
+  }
+
+  //something for validating email
+
+  //something if input is invalid
 
   return (
     <>
-      
+      <button onClick={loginPressed}>Login</button>
     </>
   )
 }
